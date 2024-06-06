@@ -1,3 +1,4 @@
+
 // Función para cargar el carrito desde localStorage
 const cargarCarrito = () => {
     const carritoGuardado = localStorage.getItem('carrito');
@@ -62,6 +63,6 @@ const agregarAlCarrito = (id, productos) => {
     const producto = productos.find((producto) => producto.id === id);
     carrito.push(producto);
     guardarCarrito();
-    
+    actualizarCarrito();
     console.log(carrito);
 };
