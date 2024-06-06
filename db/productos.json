@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "nombre": "BACARDI" ,
+        "precio": 14500 ,
+        "img": "img/bacardi.png"
+    },
+    {
+        "id": 2,
+        "nombre": "CAMPARI" ,
+        "precio": 8200,
+        "img": "img/campari1.png"
+    },
+    {
+        "id": 3,
+        "nombre": "FERNET" ,
+        "precio": 8800 ,
+        "img": "img/fernet1.png"
+    },
+    {
+        "id": 4,
+        "nombre": "GIN" ,
+        "precio": 22700,
+        "img": "img/gin1.png"
+    },
+    {
+        "id": 5,
+        "nombre": "GINEBRA" ,
+        "precio": 29900 ,
+        "img": "img/ginebra1.png"
+    },
+    {
+        "id": 6,
+        "nombre": "MARTINI" ,
+        "precio": 7400,
+        "img": "img/martini1.png"
+    },
+    {
+        "id": 7,
+        "nombre": "SMIRNOFF" ,
+        "precio": 5800,
+        "img": "img/smirnoff1.png"
+    },
+    {
+        "id": 8,
+        "nombre": "TEQUILA" ,
+        "precio": 34400 ,
+        "img": "img/tequila1.png"
+    },
+    {
+        "id": 9,
+        "nombre": "VODKA" ,
+        "precio": 17800,
+        "img": "img/vodka1.png"
+    },
+    {
+        "id": 10,
+        "nombre": "WHISKY" ,
+        "precio": 39600,
+        "img": "img/whiskey1.png"
+    }
+]
