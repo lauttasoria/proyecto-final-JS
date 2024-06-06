@@ -17,5 +17,3 @@ carrito.forEach(element => {
 let totalCarrito = carrito.reduce((acumulador, producto) => acumulador + producto.precio, 0);
 let infoTotal = document.getElementById("monto");
 infoTotal.innerText = "Total a pagar $: " + totalCarrito;
-
-

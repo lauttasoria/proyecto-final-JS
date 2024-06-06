@@ -62,5 +62,6 @@ const agregarAlCarrito = (id, productos) => {
     const producto = productos.find((producto) => producto.id === id);
     carrito.push(producto);
     guardarCarrito();
+    
     console.log(carrito);
 };
