@@ -1,7 +1,20 @@
-/*const listaProductos = 'db/productos.json'*/
+// Función para cargar el carrito desde localStorage
+const cargarCarrito = () => {
+    const carritoGuardado = localStorage.getItem('carrito');
+    if (carritoGuardado) {
+        return JSON.parse(carritoGuardado);
+    }
+    return [];
+};
+
+// Función para guardar el carrito en localStorage
+const guardarCarrito = () => {
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+};
 
 const contenedorProductos = document.getElementById('misProductos');
 
+let carrito = cargarCarrito();
 fetch("./db/productos.json")
     .then((respuesta) => respuesta.json())
     .then((datos) => {
@@ -37,21 +50,17 @@ function misProductos(productos) {
                 position: "center", // `left`, `center` or `right`
                 stopOnFocus: true, // Prevents dismissing of toast on hover
                 style: {
-                  background: "linear-gradient(to right, #debd1c, #96c93d)",
+                    background: "linear-gradient(to right, #debd1c, #96c93d)",
                 },
-                onClick: function(){} // Callback after click
-              }).showToast();
+                onClick: function() {} // Callback after click
+            }).showToast();
         });
     });
 }
 
-const carrito = [];
-
 const agregarAlCarrito = (id, productos) => {
     const producto = productos.find((producto) => producto.id === id);
     carrito.push(producto);
-    localStorage.setItem("carrito", JSON.stringify(carrito));
+    guardarCarrito();
     console.log(carrito);
 };
-
-
